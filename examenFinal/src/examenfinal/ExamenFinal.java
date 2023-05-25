@@ -1,5 +1,7 @@
 package examenfinal;
 
+import models.Cigarro;
+
 /**
  *
  * @author BrayanChan
@@ -20,6 +22,7 @@ public class ExamenFinal {
     //07 aroma
     //13 azucar
     //2 nicotina
+    
     public static void cigarro (){
         int cantHojas = 92;
         int tiemPicado = 11;
@@ -31,9 +34,22 @@ public class ExamenFinal {
         System.out.println(totalCigarrillos);
     }
     
+    public static void instanciaCigarros (){
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Cigarreria la Ilusion");
+        System.out.println("Proyecto de sistematizacion del proceso produccion de cigarros");
+        System.out.println("");
+        Cigarro.picadoHojas();
+        System.out.println("Total de cigarros producidos: ");Cigarro.Cigarrillos();
+        Cigarro.cajetillas();
+        
+    }
+    
     public static void main(String[] args) {
         author71392();
-        cigarro();
+        //cigarro();
+        instanciaCigarros();
+        
     }
     
 }
